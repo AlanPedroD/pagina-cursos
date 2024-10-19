@@ -374,6 +374,12 @@ p {
         flex-direction: column;
         justify-content: center;
     }
+    .card{
+        width: 100%;
+    }
+    .post{
+        width: 100%;
+    }
 }
 
 @media(max-width: 320px){
