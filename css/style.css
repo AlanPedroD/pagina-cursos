@@ -162,9 +162,9 @@ nav{
 .card {
     display: flex;
     flex-direction: column;
-    background-color: #013277;
+    background-color: #212427;
     border: 1px solid #ddd; 
-    border-radius: 8px; 
+    border-radius: 10px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     padding: 15px; 
     width: calc(33.33% - 20px); /* Largura do card em relação ao contêiner */
@@ -303,7 +303,7 @@ p {
 
 .redes-sociais a {
     margin: 0 10px;
-    color: #f5f5f5;
+    color: #177489;
 }
 
 .container-footer .logo{
