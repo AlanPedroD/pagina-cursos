@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: .3s ease;
+}
+  
+body {
+    background-color: #f5f5f5;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #11212D;
+    padding: 10px 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 30px;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: #f5f5f5ec;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    color: #ffffff;
+}
+
+.btn {
+    background: transparent;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #fff;
+}
+
+.menu .btn:hover {
+    background-color: #fff;
+    color: #11212D;
+}
+
+.btn.primary {
+    background-color: rgba(0,0,0,.60);
+    border: none;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a{
+    width: 50px;
+    height: 50px;
+}
+
+.logo img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.logo a:hover{
+    content: url('../imagens/logo-azul-claro.png'); 
+}
+
+.hero {
+    background-image: url('../imagens/banner-11.png');
+    background-size: cover;
+    background-position: center;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.titulo-e-botao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #ffffffaf;
+}
+
+.button {
+    max-width: 300px;
+    padding: 15px 30px;
+    background-color: rgba(0,0,0,.60);
+    color: #f5f5f5;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button:hover{
+    background-color: #11212D;
+    color: #f5f5f5;
+}
+
+/* Seção de cursos */
+.courses {
+    padding: 50px;
+    text-align: center;
+    background-color: #ffffff;
+    background-color: #f5f5f5;
+}
+
+.courses h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.cards-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 20px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #013277;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 15px; 
+    width: calc(33.33% - 20px); /* Largura do card em relação ao contêiner */
+    box-sizing: border-box; /* Garantir que padding e bordas sejam incluídos na largura total */
+    transition: transform 0.3s; /* Transição para efeitos de hover */
+}
+
+.card:hover {
+    cursor: default;
+    transform: scale(0.95);
+}
+
+.div-logo-cursos img {
+    width: 100px; 
+    height: 50px; 
+    object-fit: contain; 
+}
+
+.div-logo-cursos{
+    border-radius: 10px;
+}
+
+h3 {
+    margin: 10px 0; 
+    font-size: 1.5em; 
+}
+
+p {
+    font-size: 1em; 
+    color: #555; 
+}
+
+.card h3{
+    color: #f5f5f5;
+}
+
+.card p{
+    margin-bottom: 10px;
+    color: #f5f5f5;
+}
+
+.card a {
+    /* display: inline-block; 
+    color: #f5f5f5; 
+    background-color: #2196F3;
+    width: 120px;
+    max-width: 100%;
+    margin-top: auto;
+    text-align: center;
+    align-self: center;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px; */
+
+
+    max-width: 140px;
+    text-align: center;
+    display: inline-block;
+    align-self: center;
+    margin-top: auto;
+
+    color: #f5f5f5;
+    /* background: transparent; */
+    padding: 8px 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #fff;
+
+    background-color: rgba(0,0,0,.30);
+}
+
+
+/* Seção de blog */
+.blog {
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+
+.blog h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.post a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Seção de FAQ */
+.faq {
+    background-color: #ffffff;
+    padding: 50px;
+    text-align: center;
+}
+.faq h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+.faq-item {
+    margin-bottom: 20px;
+}
+.faq-item h3 {
+    font-size: 1.5rem;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(2, 18, 37, 0.95); 
+    flex-direction: column;
+}
+
+.redes-sociais{
+    padding: 8px 0;
+}
+
+.redes-sociais a {
+    margin: 0 10px;
+    color: #f5f5f5;
+}
+
+.container-footer .logo{
+    display: flex;
+    max-width: 50px;
+}
+.container-footer .logo img{
+    width: 100%;
+}
+
+
+@media(max-width: 768px){
+    .hero{
+        justify-content: flex-start;
+        height: 370px;
+    }
+    .hero h1{
+        font-size: 2rem;
+        margin-top: 40px;
+    }
+    .courses h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 16px;
+    }
+}
+
+
+@media(max-width: 680px){
+    .logo a{
+        content: url('../imagens/logo-azul-claro.png'); 
+    }
+    .cards-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 80%;
+    }
+
+    .blog-posts{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .post{
+        width: 80%;
+    }
+}
+
+@media(max-width: 426px){
+    .logo a{
+        max-width: 50px;
+    }
+    .menu{
+        padding: 16px 0;
+        gap: 12px;
+    }
+    .menu a{
+        font-size: 11px;
+        color: red;
+    }
+    .cabecalho{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 320px){
+    .menu a{
+        font-size: 10px;
+    }
+}
