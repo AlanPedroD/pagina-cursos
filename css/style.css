@@ -19,10 +19,11 @@ body {
 
 .cabecalho {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: #11212D;
     padding: 10px 0;
+    gap: 30px;
 }
 
 nav{
