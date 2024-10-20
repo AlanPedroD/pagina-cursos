@@ -285,22 +285,31 @@ p {
     flex-direction: column;
 }
 
-.redes-sociais{
-    padding: 8px 0;
-}
-
-.redes-sociais a {
-    margin: 0 10px;
-    color: #2BDEFD;
-    color: #f5f5f5;
-    font-weight: 600;
-}
-
 .container-footer .logo{
     display: flex;
     max-width: 50px;
+    margin-bottom: 10px;
 }
 .container-footer .logo img{
+    width: 100%;
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.redes-sociais a {
+    display: flex;
+   max-width: 30px;
+   align-self: center;
+   align-content: center;
+}
+
+.redes-sociais img{
     width: 100%;
 }
 
