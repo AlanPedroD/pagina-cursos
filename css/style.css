@@ -376,6 +376,7 @@ p {
     .cabecalho{
         flex-direction: column;
         justify-content: center;
+        gap: 12px;
     }
     .card{
         width: 100%;
