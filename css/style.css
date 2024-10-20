@@ -370,7 +370,8 @@ p {
     }
     .menu a{
         font-size: 11px;
-        color: red;
+        color: #ff9900;
+        font-weight: 600;
     }
     .cabecalho{
         flex-direction: column;
