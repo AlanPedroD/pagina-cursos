@@ -68,7 +68,8 @@ nav{
 }
 
 .btn.primary {
-    background-color: rgba(0,0,0,.60);
+    /* background-color: rgba(0,0,0,.60); */
+    background-color: #ff9900;
     border: none;
 }
 
@@ -89,7 +90,7 @@ nav{
 }
 
 .logo a:hover{
-    content: url('../imagens/logo-azul-claro.png'); 
+    content: url('../imagens/logo-amarela-clara.png'); 
 }
 
 .hero {
@@ -306,6 +307,8 @@ p {
 .redes-sociais a {
     margin: 0 10px;
     color: #2BDEFD;
+    color: #f5f5f5;
+    font-weight: 600;
 }
 
 .container-footer .logo{
