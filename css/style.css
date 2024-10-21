@@ -279,42 +279,77 @@ p {
     font-size: 1.5rem;
 }
 
-.container-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    width: 100%;
-    padding: 10px;
-    background-color: rgba(2, 18, 37, 0.95); 
-    flex-direction: column;
+.footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+    padding: 30px 0;
+    text-align: center;
 }
 
-.container-footer .logo{
-    display: flex;
-    max-width: 50px;
-    margin-bottom: 10px;
-}
-.container-footer .logo img{
-    width: 100%;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.redes-sociais{
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    min-width: 200px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.redes-sociais {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    margin-bottom: 10px;
-}
-
-.redes-sociais a {
-    display: flex;
-   max-width: 30px;
-   align-self: center;
-   align-content: center;
+    flex-direction: column;
+    min-width: 200px;
+    margin: 20px 0;
+    text-align: center;
 }
 
 .redes-sociais img{
-    width: 100%;
+    max-width: 30px;
+    height: auto;
+    /* margin-top: 12px; */
+    margin-bottom: 12px;
+}
+
+
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #f39c12;
+}
+
+.footer-copy {
+    margin-top: 30px;
+    font-size: 14px;
 }
 
 
@@ -381,6 +416,21 @@ p {
     .post{
         width: 100%;
     }
+
+    .footer-sections{
+        justify-content: center;
+    }
+    .footer-section{
+        text-align: center;
+    }
+    .redes-sociais{
+        flex-direction: row;
+    }
+   .redes-sociais img{
+    margin-right: 10px;
+    margin-bottom: 0;
+   }
+
 }
 
 @media(max-width: 320px){
