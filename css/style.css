@@ -367,6 +367,33 @@ p {
 
 
 @media(max-width: 680px){
+    .cabecalho{
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+    }
+    .menu{
+        padding: 16px 0;
+        gap: 12px;
+    }
+    .menu li:nth-child(-n+3) a{
+        padding: 0;
+    }
+    .redes-sociais{
+        flex-direction: row;
+    }
+    .footer-sections{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section{
+        text-align: center;
+    }
+    .redes-sociais img{
+        margin-right: 10px;
+        margin-bottom: 0;
+       }
     .cards-container{
         flex-direction: column;
         justify-content: center;
@@ -374,7 +401,7 @@ p {
     }
 
     .card{
-        width: 80%;
+        width: 100%;
     }
 
     .blog-posts{
@@ -389,21 +416,9 @@ p {
 }
 
 @media(max-width: 426px){
-    .menu{
-        padding: 16px 0;
-        gap: 12px;
-    }
     .menu a{
         font-size: 11px;
         font-weight: 600;
-    }
-    .menu li:nth-child(-n+3) a{
-        padding: 0;
-    }
-    .cabecalho{
-        flex-direction: column;
-        justify-content: center;
-        gap: 12px;
     }
     .card{
         width: 100%;
@@ -411,20 +426,6 @@ p {
     .post{
         width: 100%;
     }
-
-    .footer-sections{
-        justify-content: center;
-    }
-    .footer-section{
-        text-align: center;
-    }
-    .redes-sociais{
-        flex-direction: row;
-    }
-   .redes-sociais img{
-    margin-right: 10px;
-    margin-bottom: 0;
-   }
 
 }
 
